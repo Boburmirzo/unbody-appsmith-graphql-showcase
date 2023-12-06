@@ -96,7 +96,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1701684110821,
-              "originalBottomRow": 108,
+              "originalBottomRow": 119,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -115,7 +115,8 @@
                 "task": 245,
                 "step": 70,
                 "status": 85,
-                "actionItem": 535
+                "actionItem": 535,
+                "dueDate": 202
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -161,7 +162,7 @@
                   "alias": "dueDate",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "date",
+                  "columnType": "text",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -213,7 +214,7 @@
               "textSize": "0.875rem",
               "widgetId": "o0c3i84yte",
               "minWidth": 450,
-              "tableData": "{{Unbody_Action_Items_API.data.data.Get.TextDocument[0]._additional.generate.singleResult}}",
+              "tableData": "{{Unbody_Action_Items_API.data.data.Get.SubtitleEntry[0]._additional.generate.groupedResult}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -222,7 +223,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 74,
+              "originalTopRow": 85,
               "mobileLeftColumn": 8,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
@@ -279,11 +280,11 @@
               "isLoading": false,
               "mobileTopRow": 7,
               "responsiveBehavior": "fill",
-              "originalTopRow": 70,
+              "originalTopRow": 81,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 3,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 74,
+              "originalBottomRow": 85,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -385,7 +386,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "{{Unbody_Key_Points_API.data.data.Get.TextDocument[0]._additional.generate.singleResult}}",
+              "text": "{{Unbody_Key_Points_API.data.data.Get.SubtitleEntry[0]._additional.generate.groupedResult}}",
               "key": "l0pj5l5pv6",
               "isDeprecated": false,
               "rightColumn": 61,
@@ -406,7 +407,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 1,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 69,
+              "originalBottomRow": 80,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
