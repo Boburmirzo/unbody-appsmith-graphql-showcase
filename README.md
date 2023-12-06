@@ -1,11 +1,3 @@
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
+# Transforming Team Meetings with AI-Powered Summaries and Action Tracking
 
-This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
-
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/images/integrations.png)
-
-### [Github](https://github.com/appsmithorg/appsmith) • [Docs](https://docs.appsmith.com/?utm_source=github&utm_medium=social&utm_content=appsmith_docs&utm_campaign=null&utm_term=appsmith_docs) • [Community](https://community.appsmith.com/) • [Tutorials](https://github.com/appsmithorg/appsmith/tree/update/readme#tutorials) • [Youtube](https://www.youtube.com/appsmith) • [Discord](https://discord.gg/rBTTVJp)
-
-##### You can visit the application using the below link
-
-###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](http://localhost/applications/656c817a3537d2031eaf1be7/pages/656c817a3537d2031eaf1bea) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](http://localhost/applications/656c817a3537d2031eaf1be7/pages/656c817a3537d2031eaf1bea/edit)
+This repo demonstrates how to create an application for creating team meating reports including tracking action items, responsibilities, and deadlines. It generates a team meeting minutes summary from the meeting audio transcripts in [Google Drive](https://www.google.com/drive/) and shows this data on [Appsmith](https://www.appsmith.com/) UI dashboard. [Unbody](https://unbody.io/) is used to retrieve meeting details such as audio recordings or transcripts intelligently from Google Drive and Google Calendar and enable this information to query through GraphQL. Unbody uses LLMs to summarize key points from meetings, extract action items, and remind responsible parties of upcoming deadlines.
