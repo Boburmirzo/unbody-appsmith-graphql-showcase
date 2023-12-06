@@ -1,0 +1,17 @@
+query {
+  Get {
+    TextDocument(nearText: { concepts: ["Meeting Agenda"] }, limit: 2) {
+      _additional {
+        generate(
+          singleResult: {
+            prompt: """
+            Summarize key points from meeting and make it short without action items: {text}.
+            """
+          }
+        ) {
+          singleResult
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+query {
+  Get {
+    GoogleCalendarEvent {
+			recurrence
+      _additional {
+        generate(
+          singleResult: {
+            prompt: """
+            Using the calendar following information:{title},{start},{end},{descriptionText}
+ 						Provide meeting title, date and time,location,
+            attendees and show absents, book next meeting time for next Monday.
+            """
+          }
+        ) {
+          singleResult
+        }
+      }
+    }
+  }
+}

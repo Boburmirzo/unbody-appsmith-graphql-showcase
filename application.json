@@ -1,0 +1,24 @@
+{
+  "pages": [
+    {
+      "id": "Report",
+      "isDefault": true
+    },
+    {
+      "id": "Ask meeting notes",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#F4FFDE",
+  "icon": "chat",
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

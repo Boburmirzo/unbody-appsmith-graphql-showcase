@@ -1,0 +1,15 @@
+query GenerateSummary($inputText: String!) {
+  Get{
+    TextDocument {
+      _additional {
+        generate(
+          singleResult: {
+            prompt: """$inputText"""
+          }
+        ) {
+          singleResult
+        }
+      }
+    }
+  }
+}

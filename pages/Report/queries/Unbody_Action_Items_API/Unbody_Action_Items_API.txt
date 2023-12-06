@@ -1,0 +1,23 @@
+query { 
+  Get {
+    TextDocument(nearText: { concepts: ["Action Items"] }) {
+      _additional {
+        generate(
+          singleResult: {
+            prompt: """
+            Extract action items from the following text and format them as an array of objects: {text}.
+            Format example:
+            [
+              { "actionItem": "First action item description", "dueDate": "YYYY-MM-DD", "assignedTo": "Name" },
+              { "actionItem": "Second action item description", "dueDate": "YYYY-MM-DD", "assignedTo": "Name" }
+              // ... more items
+            ]
+            """
+          }
+        ) {
+          singleResult
+        }
+      }
+    }
+  }
+}
