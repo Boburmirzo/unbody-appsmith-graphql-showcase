@@ -1,15 +1,15 @@
 query {
   Get {
-    TextDocument(nearText: { concepts: ["Meeting Agenda"] }, limit: 2) {
+    SubtitleEntry(
+      where: {path: ["document", "SubtitleFile", "media", "AudioFile", "originalName"], valueText: "Audio Transcript of Team Meeting - December 1,2023", operator: Equal}
+      sort: {order: asc, path: "order"}
+      nearText: {concepts: ["Meeting Agenda"] }
+    ) {
       _additional {
         generate(
-          singleResult: {
-            prompt: """
-            Summarize key points from meeting and make it short without action items: {text}.
-            """
-          }
+          groupedResult: {task: "Summarize the meeting and make it shorter one line each", properties: ["text"]}
         ) {
-          singleResult
+          groupedResult
         }
       }
     }
