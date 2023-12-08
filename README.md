@@ -4,4 +4,6 @@ This repo demonstrates how to create an application for creating team meating re
 
 See how the app works:
 
-![Unbody GraphQL Demo](/assets/Meeting%20Minutes%20Report%20v2.gif)
+![Unbody GraphQL Demo](/assets/Meeting%20Minutes%20Report%20V4.gif)
+
+Read the following article to try out the project yourself:
