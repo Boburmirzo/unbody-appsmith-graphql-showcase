@@ -1,15 +1,15 @@
 query {
   Get {
-    SubtitleEntry(
-      where: {path: ["document", "SubtitleFile", "media", "AudioFile", "originalName"], valueText: "Audio Transcript of Team Meeting - December 1,2023", operator: Equal}
-      sort: {order: asc, path: "order"}
-      nearText: {concepts: ["Meeting Agenda"] }
-    ) {
+    GoogleDoc(nearText: { concepts: ["Meeting Agenda"] }, limit: 2) {
       _additional {
         generate(
-          groupedResult: {task: "Summarize the meeting and make it shorter one line each", properties: ["text"]}
+          singleResult: {
+            prompt: """
+            Summarize the meeting and make it shorter one line each: {text}.
+            """
+          }
         ) {
-          groupedResult
+          singleResult
         }
       }
     }

@@ -1,26 +1,21 @@
-query {
+query { 
   Get {
-    SubtitleEntry(
-      where: {path: ["document", "SubtitleFile", "media", "AudioFile", "originalName"], valueText: "Audio Transcript of Team Meeting - December 1,2023", operator: Equal}
-      sort: {order: asc, path: "order"}
-      nearText: {concepts: ["Action items"]}
-    ) {
+    GoogleDoc(nearText: { concepts: ["Action Items"] }) {
       _additional {
-generate(
-        groupedResult: {
-            task: """
-            Extract action items from the following text and format them as an array of objects:
+        generate(
+          singleResult: {
+            prompt: """
+            Extract action items from the following text and format them as an array of objects: {text}.
             Format example:
             [
               { "actionItem": "First action item description", "dueDate": "YYYY-MM-DD", "assignedTo": "Name" },
               { "actionItem": "Second action item description", "dueDate": "YYYY-MM-DD", "assignedTo": "Name" }
               // ... more items
             ]
-          """
-            properties: ["text"]
+            """
           }
         ) {
-          groupedResult
+          singleResult
         }
       }
     }
