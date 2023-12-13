@@ -13,3 +13,5 @@ See how the app works:
 ![Unbody GraphQL Demo](/assets/Meeting%20Minutes%20Report%20v5.gif)
 
 Read the following article to try out the project yourself:
+
+[How to build a Google Meet AI assistant app in 10 minutes with Unbody & AppSmith](https://www.unbody.io/blog/gmeet-ai-assistant-appsmith)
